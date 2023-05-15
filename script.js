@@ -1,8 +1,6 @@
-let swiper = new Swiper('.swiper', {
+var swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  simulateTouch: true,
+  direction: "horizontal",
 
   grid: {
     rows: 1,
@@ -10,9 +8,7 @@ let swiper = new Swiper('.swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
-    enabled: true,
-    clickable: true,
+    el: ".swiper-pagination",
   },
 
   breakpoints: {
@@ -61,28 +57,28 @@ let swiper = new Swiper('.swiper', {
       pagination: {
         enabled: false,
       },
-    }
-  }
+    },
+  },
 });
 
-btnExpand = document.querySelector('#btn-expand');
+btnExpand = document.querySelector("#btn-expand");
 let isExpand = false;
-btnExpand.addEventListener('click', function (evt) {
+btnExpand.addEventListener("click", function (evt) {
   evt.preventDefault();
-  scrollMenuMain = document.querySelector('.scroll-menu-main');
-  mySwyper = document.querySelector('.swiper');
+  scrollMenuMain = document.querySelector(".scroll-menu-main");
+  mySwyper = document.querySelector(".swiper");
 
   if (!isExpand) {
-    btnExpand.textContent = 'Скрыть';
-    scrollMenuMain.style.height = '350px';
-    mySwyper.style.height = '350px';
+    btnExpand.textContent = "Скрыть";
+    scrollMenuMain.style.height = "350px";
+    mySwyper.style.height = "350px";
     swiper.params.grid.rows = 3;
     swiper.update();
     isExpand = true;
   } else {
-    btnExpand.textContent = 'Показать все';
-    scrollMenuMain.style.height = '250px';
-    mySwyper.style.height = '250px';
+    btnExpand.textContent = "Показать все";
+    scrollMenuMain.style.height = "250px";
+    mySwyper.style.height = "250px";
     swiper.params.grid.rows = 2;
     swiper.update();
     isExpand = false;

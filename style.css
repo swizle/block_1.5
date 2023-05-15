@@ -1,103 +1,103 @@
 @font-face {
-    font-family: TT Lakes;
-    src: url('TTLakes-Regular.ttf');
+  font-family: TT Lakes;
+  src: url("TTLakes-Regular.ttf");
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "TT Lakes", serif;
-    background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  font-family: "TT Lakes", serif;
+  background-color: #f8f8f8;
 }
 
 .scroll-menu-header {
-    padding: 16px;
-    background: linear-gradient(to right, #f8f8f8, #ffffff);
+  padding: 16px;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
 }
 
 .scroll-menu-header__text {
-    margin: 0;
+  margin: 0;
 }
 
 .scroll-menu-main {
-    height: 125px;
-    background-color: #f8f8f8;
+  height: 125px;
+  background-color: #f8f8f8;
 }
 
 .scroll-menu-main-brand {
-    min-width: 192px;
-    width: 192px;
-    padding: 16px;
-    margin: 16px;
-    border: 1px solid #eaeaea;
-    border-radius: 10px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  min-width: 192px;
+  width: 192px;
+  padding: 16px;
+  margin: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .scroll-menu-main-brand__img {
-    object-fit: contain;
-    height: 40px;
-    width: 100px;
+  object-fit: contain;
+  height: 40px;
+  width: 100px;
 }
 
 .scroll-menu-main-brand__btn {
-    height: 40px;
-    width: 40px;
-    border: none;
-    background: url("Images/btn.svg") center no-repeat;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background: url("Images/btn.svg") center no-repeat;
 }
 
 .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #b8b8b8;
+  width: 12px;
+  height: 12px;
+  background-color: #b8b8b8;
 }
 
 .scroll-menu-main-expand {
-    display: none;
-    font-family: "TT Lakes", serif;
-    margin: 24px;
-    padding: 0;
-    border: none;
-    background: none;
+  display: none;
+  font-family: "TT Lakes", serif;
+  margin: 24px;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 .scroll-menu-main-expand::before {
-    content: url("Images/expand.svg");
-    margin-right: 17px;
+  content: url("Images/expand.svg");
+  margin-right: 17px;
 }
 
 .swiper-slide {
-    height: 106px !important;
+  height: 106px !important;
 }
 
-@media screen and (min-width: 767px){
-    .scroll-menu-main {
-        height: 250px;
-    }
+@media screen and (min-width: 767px) {
+  .scroll-menu-main {
+    height: 250px;
+  }
 
-    .swiper {
-        height: 250px;
-    }
+  .swiper {
+    height: 250px;
+  }
 
-    .scroll-menu-main-expand {
-        display: block;
-    }
+  .scroll-menu-main-expand {
+    display: block;
+  }
 }
 
-@media screen and (max-width: 767px){
-    .scroll-menu-main {
-        height: 125px !important;
-    }
+@media screen and (max-width: 767px) {
+  .scroll-menu-main {
+    height: 125px !important;
+  }
 
-    .swiper {
-        height: 125px !important;
-    }
+  .swiper {
+    height: 125px !important;
+  }
 
-    .scroll-menu-main-expand {
-        display: none;
-    }
+  .scroll-menu-main-expand {
+    display: none;
+  }
 }
